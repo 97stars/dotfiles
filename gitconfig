@@ -1,0 +1,11 @@
+[user]
+	name = Tom Neudoerffer
+	email = tom.neudoerffer@gmail.com
+[color]
+	status = auto
+	branch = auto
+	ui = true
+[alias]
+	last = log -1 HEAD
+[core]
+	autocrlf = true
