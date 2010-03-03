@@ -48,7 +48,11 @@
 
 ;; Look Ma, no backups!
 (setq make-backup-files nil)
-(auto-save-mode nil)
+(setq auto-save-default nil)
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
 
 ;;____________________________________________________________________
 ;;;; PYTHON
@@ -79,4 +83,5 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
 (ido-mode)
