@@ -72,4 +72,11 @@
 (global-set-key (kbd "<f8>") 'previous-buffer)
 (global-set-key (kbd "<f12>") 'menu-bar-mode)
 
+;;____________________________________________________________________
+;;;; org mode
+(add-to-list 'load-path "~/elisp/org/")
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
 (ido-mode)
