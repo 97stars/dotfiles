@@ -17,6 +17,9 @@
 ;; (set-frame-height (selected-frame) 80)
 ;; (set-frame-width (selected-frame) 120)
 
+;; no line wrapping
+(setq-default truncate-lines t)
+
 ;; colors
 (add-to-list 'load-path "~/elisp/color-theme")
 (require 'color-theme)
@@ -53,12 +56,6 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
-
-;;____________________________________________________________________
-;;;; PYTHON
-(autoload 'pythom-mode "python-mode" "Python Mode." t)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-(add-to-list 'interpreter-mode-alist '("python" . python-mode))
 
 ;; line numbers
 (require 'linum)
