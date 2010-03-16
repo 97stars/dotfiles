@@ -54,11 +54,7 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-;;____________________________________________________________________
-;;;; PYTHON
-(autoload 'pythom-mode "python-mode" "Python Mode." t)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
-(add-to-list 'interpreter-mode-alist '("python" . python-mode))
+(ido-mode)
 
 ;; line numbers
 (require 'linum)
@@ -68,6 +64,20 @@
 (setq line-number-mode t)
 (setq column-number-mode t)
 (global-linum-mode)
+
+;;____________________________________________________________________
+;;;; PYTHON
+(autoload 'pythom-mode "python-mode" "Python Mode." t)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(add-to-list 'interpreter-mode-alist '("python" . python-mode))
+
+;;____________________________________________________________________
+;;;; PERL
+(mapc
+ (lambda (pair)
+   (if (eq (cdr pair) 'perl-mode)
+       (setcdr pair 'cperl-mode)))
+ (append auto-mode-alist interpreter-mode-alist))
 
 ;;____________________________________________________________________
 ;;;; keybindings
@@ -85,5 +95,3 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
-
-(ido-mode)
