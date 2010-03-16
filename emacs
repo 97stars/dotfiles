@@ -58,6 +58,10 @@
       `((".*" ,temporary-file-directory t)))
 
 (ido-mode)
+(add-hook 'ido-setup-hook 'ido-my-keys)
+
+(defun ido-my-keys ()
+  (define-key ido-completion-map " " 'just-one-space))
 
 ;; line numbers
 (require 'linum)
