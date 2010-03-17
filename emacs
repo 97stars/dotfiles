@@ -1,12 +1,8 @@
-;; UI mods
-(tool-bar-mode nil)
-(scroll-bar-mode nil)
-
 ;;____________________________________________________________________
 ;;;; Init code
 
-;; default font
-(set-face-attribute 'default nil :font "Consolas-11.0")
+(tool-bar-mode nil)
+(scroll-bar-mode nil)
 
 ;; window mods
 (modify-frame-parameters
@@ -102,3 +98,8 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
+
+;;___________________________________________________________________
+;;;; local overrides
+(load "~/.emacs.local")
