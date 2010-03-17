@@ -19,10 +19,6 @@
 ;; colors
 (add-to-list 'load-path "~/elisp/color-theme")
 (require 'color-theme)
-(eval-after-load "color-theme"
-    '(progn
-        (color-theme-initialize)
-        (color-theme-tango)))
 
 ;; no more splash screen
 (setq inhibit-splash-screen t)

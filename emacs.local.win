@@ -1,2 +1,8 @@
 ;; default font
 (set-face-attribute 'default nil :font "Consolas-10.0")
+
+;; colors
+(eval-after-load "color-theme"
+    '(progn
+        (color-theme-initialize)
+        (color-theme-tango)))
