@@ -78,6 +78,8 @@
        (setcdr pair 'cperl-mode)))
  (append auto-mode-alist interpreter-mode-alist))
 
+(setq cperl-indent-level 4)
+
 ;;____________________________________________________________________
 ;;;; keybindings
 (global-set-key (kbd "C-<f1>") 'clipboard-kill-ring-save)
