@@ -5,6 +5,8 @@
 	status = auto
 	branch = auto
 	ui = true
+[color "diff"]
+	commit = white
 [alias]
 	ci = commit
 	st = status
@@ -14,5 +16,3 @@
 	last = log -1 HEAD
 [core]
 	autocrlf = true
-[config "diff"]
-	commit = white
