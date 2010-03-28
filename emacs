@@ -41,6 +41,10 @@
 ;; push the mouse out of the way
 (mouse-avoidance-mode 'jump)
 
+;; ibuffer > buffer
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+(autoload 'ibuffer "ibuffer" "List buffers." t)
+
 ;; Look Ma, no backups!
 (setq make-backup-files nil)
 (setq auto-save-default nil)
