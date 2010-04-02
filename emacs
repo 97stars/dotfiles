@@ -88,6 +88,9 @@
 ;;;; keybindings
 (global-set-key (kbd "C-<f1>") 'clipboard-kill-ring-save)
 (global-set-key (kbd "C-<f2>") 'clipboard-yank)
+(global-set-key (kbd "C-<f3>") (lambda () 
+				 (interactive) 
+				 (revert-buffer t t)))
 (global-set-key (kbd "<f6>") 'linum-mode)
 (global-set-key (kbd "<f7>") 'next-buffer)
 (global-set-key (kbd "<f8>") 'previous-buffer)
@@ -105,3 +108,4 @@
 ;;___________________________________________________________________
 ;;;; local overrides
 (load "~/.emacs.local")
+(put 'upcase-region 'disabled nil)
