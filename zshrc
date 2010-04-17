@@ -78,5 +78,3 @@ alias ssh="ssh -X"
 if [[ -f /usr/local/bin/virtualenvwrapper_bashrc ]] ; then
     source /usr/local/bin/virtualenvwrapper_bashrc
 fi
-
-fortune -s
