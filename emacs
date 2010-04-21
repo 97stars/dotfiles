@@ -105,6 +105,12 @@
 (setq cperl-indent-level 4)
 
 ;;____________________________________________________________________
+;;;; yaml-mode
+(add-to-list 'load-path "~/elisp/yaml-mode")
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
+
+;;____________________________________________________________________
 ;;;; keybindings
 (global-set-key (kbd "C-<f1>") 'clipboard-kill-ring-save)
 (global-set-key (kbd "C-<f2>") 'clipboard-yank)

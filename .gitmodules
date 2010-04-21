@@ -1,0 +1,3 @@
+[submodule "elisp\\yaml-mode"]
+	path = elisp\\yaml-mode
+	url = git://github.com/yoshiki/yaml-mode.git
