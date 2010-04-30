@@ -3,4 +3,14 @@ username = Tom Neudoerffer <tom.neudoerffer@gmail.com>
 ssh = C:\\Installs\\PuTTY\\plink.exe
 
 [extensions]
-hgext.convert = 
+hgext.convert =
+hgext.win32text =
+
+[encode]
+** = cleverencode:
+
+[decode]
+** = cleverdecode:
+
+[hooks]
+pretxncommit.crlf = python:hgext.win32text.forbidcrlf
