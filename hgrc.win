@@ -1,0 +1,6 @@
+[ui]
+username = Tom Neudoerffer <tom.neudoerffer@gmail.com>
+ssh = C:\\Installs\\PuTTY\\plink.exe
+
+[extensions]
+hgext.convert = 
