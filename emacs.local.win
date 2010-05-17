@@ -5,4 +5,4 @@
 (eval-after-load "color-theme"
     '(progn
         (color-theme-initialize)
-        (color-theme-emacs-nw)))
+        (color-theme-mine)))
