@@ -1,5 +1,5 @@
 ;; default font
-(set-face-attribute 'default nil :font "Consolas-10.0")
+(set-face-attribute 'default nil :font "Consolas-11.0")
 
 ;; colors
 (eval-after-load "color-theme"
