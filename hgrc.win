@@ -5,6 +5,8 @@ ssh = C:\\Installs\\PuTTY\\plink.exe
 [extensions]
 hgext.convert =
 hgext.win32text =
+hgext.bookmarks =
+hggit = C:\Users\Tom\src\hg-git\hggit
 
 [encode]
 ** = cleverencode:
