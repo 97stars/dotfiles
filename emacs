@@ -105,6 +105,10 @@
 (setq cperl-indent-level 4)
 
 ;;____________________________________________________________________
+;;;; C-like
+(setq-default c-basic-offset 4)
+
+;;____________________________________________________________________
 ;;;; yaml-mode
 (add-to-list 'load-path "~/elisp/yaml-mode")
 (require 'yaml-mode)
