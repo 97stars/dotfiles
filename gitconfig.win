@@ -1,6 +1,6 @@
 [user]
 	name = Tom Neudoerffer
-	email = tom.neudoerffer@gmail.com
+	email = tom@97stars.com
 [color]
 	status = auto
 	branch = auto
