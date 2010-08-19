@@ -18,4 +18,7 @@
      (font-lock-variable-name-face ((t (:foreground "#7D5212"))))
      (minibuffer-prompt ((t (:foreground "#0E3051" :bold t))))
      (font-lock-warning-face ((t (:foreground "#FF0000" :bold t))))
+     ;; CPerl Faces
+     (cperl-array-face ((t (:foreground "#7D5212" :bold t))))
+     (cperl-hash-face ((t (:foreground "#7D5212" :bold t :italic t))))
      )))
